@@ -2,6 +2,7 @@
 import unittest
 from srt import *
 
+
 class srtTests(unittest.TestCase):
     def test_valid_period(self):
         period = '00:00:27,210 --> 00:00:31,680'
@@ -71,7 +72,6 @@ class srtTests(unittest.TestCase):
         self.assertEqual('2', srt.subtitles[1].serial)
         self.assertEqual('00:00:37,050 --> 00:00:40,850', srt.subtitles[1].period)
         self.assertEqual('燈光', srt.subtitles[1].content)
-
 
 
 if __name__ == '__main__':

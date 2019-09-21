@@ -15,7 +15,7 @@ def parse(text):
     return Srt(subtitles)
 
 def is_period(text):
-    time = map(lambda s: s.strip(), text.split('-->'))
+    time = list(map(lambda s: s.strip(), text.split('-->')))
     if len(time) != 2:
         return False
     else:
