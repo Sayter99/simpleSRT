@@ -37,7 +37,7 @@ class Subtitle:
 
 class Srt:
     """
-        subtitle: Subtitle
+        subtitles: list of Subtitle
         path: String
     """
     def __init__(self, subtitles):
